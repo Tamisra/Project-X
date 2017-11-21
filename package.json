@@ -1,0 +1,33 @@
+{
+  "name": "project_x",
+  "version": "1.0.0",
+  "description": "creating website",
+  "main": "index.html",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamisra/Project-X.git"
+  },
+  "keywords": [
+    "[\"express\"",
+    "\"mongodb\"",
+    "\"mongoose\"]"
+  ],
+  "author": "Tamisra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamisra/Project-X/issues"
+  },
+  "homepage": "https://github.com/Tamisra/Project-X#readme"
+}
