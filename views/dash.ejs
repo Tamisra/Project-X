@@ -1,0 +1,51 @@
+<!DOCtype html>
+<html>
+	<head> <title>User Dashboard</title>
+		<style>
+			.DP_frame
+			{
+				position: absolute;
+				top: 100px;
+		left: 100px;
+			}
+			
+		</style>
+		<script src="dash_logics.js"></script>
+	</head>
+	<body>
+		<div class="cover">
+			<img id="cover_pic" src="C:\Users\Public\Pictures\Sample Pictures\Koala.jpg" alt="Upload a Picture" height="400" width="100%">
+			<div class="new_file_cover">
+				<input id="new_pic_cover" type="file" accept="image/*" onchange="loadPicture()">
+			</div>
+			<div class="DP_frame" align="center">
+				<img class="DP" id="DP"src="C:\Users\Public\Pictures\Sample Pictures\Tulips.jpg" alt="Upload a Picture" height="35%" width="35%">
+
+					<div class="new_file">
+						<input id="new_pic" type="file" accept="image/*" onchange="loadPicture()">
+					</div>
+			</div>
+		</div>
+		<div class="bio">
+			<hr>
+			<p> here user will see his bio </p>
+			<div class="edit_bio">
+				<button type="button" id="add_Bio" onclick="location.href='/addbio';">Edit</button>
+			</div>
+			<hr>
+		</div>
+		<div class="my_repo">
+			<h1> My Repo</h1>
+			<hr>
+			<p>"here user's uploaded docs will be present which will be fetched from database"</p>
+			<hr>
+		</div>
+		<div class="my_likes">
+			<h1> My Likes</h1>
+			<hr>
+			<p>"here user's liked docs will be present which will be fetched from database"</p>
+			<hr>
+		</div>
+		
+	</body>
+</html>
