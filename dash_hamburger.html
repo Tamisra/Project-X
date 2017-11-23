@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: sans-serif;
+		}
+		#sidebar{
+			position: fixed;
+			width: 200px;
+			height: 100%;
+			background: #151719;
+			left: -200px;
+			transition: all 250ms linear;
+		}
+		#sidebar.active{
+			left: 0px;
+		}
+
+		#sidebar ul li{
+			color: rgba(230,230,230,0.9);
+			list-style: none;
+			padding: 15px 10px;
+			border-bottom: 1px solid rgba(100,100,100,0.5);
+
+		}	
+		#sidebar .ham-btn
+		{
+			position: absolute;
+			left: 230px;
+			top: 10px;
+		}
+		#sidebar .ham-btn span{
+			display: block; /*displayes on a seperate line*/
+			width: 30px;
+			height: 2px;
+			background: #151719;
+			margin: 5px 0px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="sidebar">
+	<div class="ham-btn" onclick="showSidebar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<ul>
+		<li>Home</li>
+		<li>Profile(User Dashboard)</li>
+		<li>Recently Liked Posts</li>
+		<li>My Posts</li>
+	</ul>
+	</div>
+<script type="text/javascript" src="ham-menu.js"></script>
+</body>
+</html>
+
+

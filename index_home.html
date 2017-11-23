@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- 	<title>Dashboard</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: sans-serif;
+		}
+		#sidebar{
+			position: fixed;
+			width: 200px;
+			height: 100%;
+			background: #151719;
+			left: -200px;
+			transition: all 250ms linear;
+		}
+		#sidebar.active{
+			left: 0px;
+		}
+
+		#sidebar ul li{
+			color: rgba(230,230,230,0.9);
+			list-style: none;
+			padding: 15px 10px;
+			border-bottom: 1px solid rgba(100,100,100,0.5);
+
+		}	
+		#sidebar .ham-btn
+		{
+			position: absolute;
+			left: 240px;
+			top: 10px;
+			margin-top: 10px;
+		}
+		#sidebar .ham-btn span{
+			display: block; /* /displayes on a seperate line*/
+			width: 30px;
+			height: 2px;
+			background: #151719;
+			margin: 5px 0px;
+
+		}
+
+	</style> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Page with carousel</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Header.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+    <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+    		<!-- <div id="sidebar">
+				<div class="ham-btn" onclick="showSidebar()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<ul>
+					<li>Home</li>
+					<li>Profile(User Dashboard)</li>
+					<li>Recently Liked Posts</li>
+					<li>My Posts</li>
+				</ul>
+			</div>
+<script type="text/javascript" src="ham-menu.js"></script> -->
+
+
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link move-l" href="#">Project X<i class="fa fa-book"></i></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a class="text-primary bg-info round" href="#">Sign Up</a></li>
+                    <li role="presentation"><a href="#" class="round">Log-in </a></li>
+                    <li role="presentation"><a href="#" class="round">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel slide" data-ride="carousel" id="carousel-1">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active"><img src="assets/img/2.jpg" alt="Slide Image" class="parallax"></div>
+            <div class="item"><img src="assets/img/golden-beach-background-1920x600-300.jpg" alt="Slide Image" class="parallax"></div>
+            <div class="item"><img src="assets/img/seats-for-summer-beach-background-1920x600-225.jpg" alt="Slide Image" class="parallax"></div>
+        </div>
+        <div>
+            <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
+                <aside></aside><i class="glyphicon glyphicon-chevron-left"></i><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-1" role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i><span class="sr-only">Next</span></a></div>
+        <ol
+        class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+            </ol>
+    </div>
+    <ul class="nav nav-tabs categories">
+        <li><a href="#" id="story">Story </a></li>
+        <li><a href="#" id="photo">Photo </a></li>
+        <li><a href="#" id="Music">Music </a></li>
+        <li><a href="#" id="Fashion">Fashion </a></li>
+        <li><a href="#" id="Confessions">Confessions </a></li>
+    </ul>
+    <div class="container post">
+        <h1 id="postday">Posted Today</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="thumbnail"><img src="assets/img/love-140v.jpg">
+                    <div class="caption">
+                        <h3>My First Date</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail img - 2"><img src="http://t.wallpaperweb.org/wallpaper/movies/1920x1080/How_I_Met_Your_Mother_2.jpg">
+                    <div class="caption">
+                        <h3>How I Met Your Mother</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail"><img src="http://www.bhmpics.com/download/the_witcher_3_wild_hunt_video_game-1920x1200.jpg" class="img-3">
+                    <div class="caption">
+                        <h3>Killing Monotony</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container stories">
+        <h1 id="postday">Stories </h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail square">
+                    <div class="caption">
+                        <h3>My First Date</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail square">
+                    <div class="caption">
+                        <h3>How I Met Your Mother</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail square">
+                    <div class="caption">
+                        <h3>Killing Monotony</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail square">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail square">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail square">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container post">
+        <h1 id="postday">Gallery </h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="love-140v.jpg" target="_blank" data-lightbox="lightboximg"> <img class="img-responsive image" src="assets/img/love-140v.jpg"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail img - 2">
+                    <a href="http://t.wallpaperweb.org/wallpaper/movies/1920x1080/How_I_Met_Your_Mother_2.jpg" target="_blank" data-lightbox="lightboximg"> <img class="img-responsive image" src="http://t.wallpaperweb.org/wallpaper/movies/1920x1080/How_I_Met_Your_Mother_2.jpg"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.bhmpics.com/download/the_witcher_3_wild_hunt_video_game-1920x1200.jpg" target="_blank" data-lightbox="lightboximg"> <img class="img-responsive image" src="http://www.bhmpics.com/download/the_witcher_3_wild_hunt_video_game-1920x1200.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="https://wallpaperscraft.com/image/the_witcher_3_wild_hunt_cd_projekt_red_the_witcher_97277_1920x1200.jpg" target="_blank" data-lightbox="lightboximg"> <img class="img-responsive image" src="https://wallpaperscraft.com/image/the_witcher_3_wild_hunt_cd_projekt_red_the_witcher_97277_1920x1200.jpg"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail img - 2">
+                    <a href="http://agphotoart.com/images/photography-portfolio/model/large/model1.jpg" target="_blank" data-lightbox="lightboximg"><img class="img-responsive image" src="http://agphotoart.com/images/photography-portfolio/model/large/model1.jpg"></a>
+                </div>
+            </div>
+            <div class="col-lg-offset-0 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.bestplacetovisit.in/wp-content/uploads/2016/08/Photography-Images.jpg" target="_blank" data-lightbox="lightboximg"><img class="img-responsive image" src="http://www.bestplacetovisit.in/wp-content/uploads/2016/08/Photography-Images.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-toolbar">
+            <div class="btn-group button" role="group">
+                <button class="btn btn-default" type="button">Previous </button>
+                <button class="btn btn-default" type="button">Next </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h5>Prooject X© 2017</h5></footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
